@@ -15,16 +15,27 @@
     <body>
         <p>Hello World</p> 
 
-        <button id="myButton">Click Me</button>
-        <p id="output"></p>
+        <button id="Book 1 button">Book 1</button>
+        <p id="Book 1 output"></p>
+
+        <button id="Book 2 button">Book 2</button>
+        <p id="Book 2 output"></p>
 
         <script>
             // references for button and output
-            var button = document.getElementById("myButton");
-            var output = document.getElementById("output");
+            var button = document.getElementById("Book 1 button");
+            var output = document.getElementById("Book 1 output");
     
              // Output of button press
-            button.addEventListener("click", function() {output.textContent = "You pressed the button!";});
+            button.addEventListener("click", function() {output.textContent = "Information on book 1";});
+
+            // references for button and output
+            var button = document.getElementById("Book 2 button");
+            var output = document.getElementById("Book 2 output");
+    
+             // Output of button press
+            button.addEventListener("click", function() {output.textContent = "Information on book 2";});
+            
         </script>
 
  
