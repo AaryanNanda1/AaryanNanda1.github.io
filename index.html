@@ -10,13 +10,11 @@
   
             p{font-weight: bold;}
 
-            body{backround-color: #f0f0f0;}
-
             header{background-color: #333;color: white;padding: 20px;text-align: center;}
 
             main{padding: 20px;}
 
-        </style>
+        </style> 
     </head>
     <body>
         <header>
@@ -33,26 +31,23 @@
         <main>
             <h2>Main Content</h2>
             <p>This is the main content section. You can place your content here.</p>
+
+
+             <script>
+                <!-- references for button and output -->
+                var button = document.getElementById("Book 1 button");
+                var output = document.getElementById("Book 1 output");
+        
+                 <!-- Output of button press -->
+                button.addEventListener("click", function() {output.textContent = "Information on book 1";});
+    
+                <!-- References for button and output -->
+                var button = document.getElementById("Book 2 button");
+                var output = document.getElementById("Book 2 output");
+        
+                 <!-- Output of button press -->
+                button.addEventListener("click", function() {output.textContent = "Information on book 2";});  
+            </script>
         </main>
-
-
-        <script>
-            <!-- references for button and output -->
-            var button = document.getElementById("Book 1 button");
-            var output = document.getElementById("Book 1 output");
-    
-             <!-- Output of button press -->
-            button.addEventListener("click", function() {output.textContent = "Information on book 1";});
-
-            <!-- References for button and output -->
-            var button = document.getElementById("Book 2 button");
-            var output = document.getElementById("Book 2 output");
-    
-             <!-- Output of button press -->
-            button.addEventListener("click", function() {output.textContent = "Information on book 2";});
-            
-        </script>
-
- 
     </body>
 </html>
