@@ -32,22 +32,29 @@
             <h2>Main Content</h2>
             <p>This is the main content section. You can place your content here.</p>
 
-
-             <script>
-                <!-- references for button and output -->
-                var button = document.getElementById("Book 1 button");
-                var output = document.getElementById("Book 1 output");
-        
-                 <!-- Output of button press -->
-                button.addEventListener("click", function() {output.textContent = "Information on book 1";});
-    
-                <!-- References for button and output -->
-                var button = document.getElementById("Book 2 button");
-                var output = document.getElementById("Book 2 output");
-        
-                 <!-- Output of button press -->
-                button.addEventListener("click", function() {output.textContent = "Information on book 2";});  
-            </script>
+            <p id="Book 1 output"></p>
+            <p id="Book 2 output"></p> 
         </main>
+
+        <script>
+            <!-- references for button and output -->
+            var button = document.getElementById("Book 1 button");
+            var output = document.getElementById("Book 1 output");
+    
+             <!-- Output of button press -->
+            button.addEventListener("click", function() {output.textContent = "Information on book 1";});
+
+            <!-- References for button and output -->
+            var button = document.getElementById("Book 2 button");
+            var output = document.getElementById("Book 2 output");
+    
+             <!-- Output of button press -->
+            button.addEventListener("click", function() {output.textContent = "Information on book 2";});  
+        </script>
+
+
+
+
+        
     </body>
 </html>
