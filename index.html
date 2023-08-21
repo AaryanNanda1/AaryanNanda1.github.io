@@ -14,6 +14,42 @@
 
             main{padding: 20px;}
 
+            /* Style for the left and right sections */
+            #left-section {
+                width: 30%; /* Adjust the width of the left section as needed */
+                float: left;
+                background-color: #f0f0f0; /* Set the background color for the left section */
+            }
+    
+            #right-section {
+                width: 70%; /* Adjust the width of the right section as needed */
+                float: left;
+                background-color: #ffffff; /* Set the background color for the right section */
+            }
+    
+            /* Clear the float to prevent layout issues */
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+    
+            /* Add some padding and margin for spacing */
+            body {
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* Optional: Add some styles to improve the visual appearance */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #e0e0e0; /* Set a background color for the entire page */
+            }
+    
+            /* Style for content within the sections */
+            #left-content, #right-content {
+                padding: 20px; /* Add padding for content within the sections */
+            }
         </style> 
     </head>
     <body>
@@ -23,12 +59,31 @@
 
             <button id="Book 1 button">Book 1</button>
             <button id="Book 2 button">Book 2</button>
-            
         </header>
 
         <main>
             <p id="Book 1 output"></p>
             <p id="Book 2 output"></p> 
+
+            <body>
+                <div id="left-section">
+                        <div id="left-content">
+                            <!-- Content for the left section goes here -->
+                            <h2>Left Section</h2>
+                            <p>This is the smaller section on the left side of the screen.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="right-section">
+                        <div id="right-content">
+                            <!-- Content for the right section goes here -->
+                            <h2>Right Section</h2>
+                            <p>This is the larger section on the right side of the screen.</p>
+                        </div>
+                    </div>
+                
+                    <div class="clearfix"></div>  
+            </body>
         </main>
 
         <script>
