@@ -13,41 +13,25 @@
             main{padding: 20px;}
 
             /* Style for the left and right sections */
-            #left-section {
-                width: 30%; /* Adjust the width of the left section as needed */
-                float: left;
-                background-color: #E75110; /* Set the background color for the left section */
-            }
+            #left-section {width: 30%; /* Adjust the width of the left section as needed */ float: left; background-color: #E75110; /* Set the background color for the left section */}
     
-            #right-section {
-                width: 70%; /* Adjust the width of the right section as needed */
-                float: left;
-                background-color: #CD7A9B; /* Set the background color for the right section */
-            }
+            #right-section {width: 70%; /* Adjust the width of the right section as needed */ float: left; background-color: #CD7A9B; /* Set the background color for the right section */}
     
             /* Clear the float to prevent layout issues */
-            .clearfix::after {
-                content: "";
-                clear: both;
-                display: table;
-            }
+            .clearfix::after {content: ""; clear: both; display: table;}
     
             /* Add some padding and margin for spacing */
-            body {
-                margin: 0;
-                padding: 0;
-            }
+            body {margin: 0; padding: 0;}
     
             /* Optional: Add some styles to improve the visual appearance */
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #010000; /* Set a background color for the entire page */
-            }
+            body {font-family: Arial, sans-serif; background-color: #010000; /* Set a background color for the entire page */}
     
             /* Style for content within the sections */
-            #left-content, #right-content {
-                padding: 20px; /* Add padding for content within the sections */
-            }
+            #left-content, #right-content {padding: 20px; /* Add padding for content within the sections */}
+
+            img {width: 100px; border-radius: 0px; float: left; margin-right: 20px;}
+
+            
         </style> 
     </head>
     <body>
@@ -70,7 +54,7 @@
                <div id="right-section">
                     <div id="right-content">
                         <!-- Content for the right section goes here -->
-                        <h2>Right Section</h2>
+                        <h2>Right Section</h2> 
                         <p>This is the larger section on the right side of the screen.</p>
                         <div id="contentContainer" style="display: none;">
                         <p id="hiddenText"><b>This is hidden text.</b>This is hidden text.</p>
@@ -93,7 +77,6 @@
             // Toggle the visibility of the content container
             if (contentContainer.style.display === "none") {
                 contentContainer.style.display = "block";
-                revealContainer.innerHTML = '';
             } else {
                 contentContainer.style.display = "none";
             }
