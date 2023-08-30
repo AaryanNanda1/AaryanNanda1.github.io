@@ -47,7 +47,7 @@
                         <!-- Content for the left section goes here -->
                         <h2>Left Section</h2>
                         <p>This is the smaller section on the left side of the screen.</p>
-                        <button id="revealButton">Reveal Text and Image</button>
+                        <button id="7habbitsButton">Reveal Text and Image</button>
                     </div>
                 </div>
         
@@ -56,9 +56,9 @@
                         <!-- Content for the right section goes here -->
                         <h2>Right Section</h2> 
                         <p>This is the larger section on the right side of the screen.</p>
-                        <div id="contentContainer" style="display: none;">
-                        <img id="hiddenImage" src="7 Habbits.jpg" alt="Hidden Image">
-                        <p id="hiddenText"><b>This is hidden text.</b>This is hidden text.</p>
+                        <div id="7HabbitsContainer" style="display: none;">
+                        <img id="7HabbitsImage" src="7 Habbits.jpg" alt="Hidden Image">
+                        <p id="7HabbitsText"><b>This is hidden text.</b>This is hidden text.</p>
                     </div>
                 </div>
                    
@@ -67,10 +67,10 @@
 
     <script>
         // Get references to the button, text, and image elements
-        const revealButton = document.getElementById("revealButton");
-        const contentContainer = document.getElementById("contentContainer");
-        const hiddenText = document.getElementById("hiddenText");
-        const hiddenImage = document.getElementById("hiddenImage");
+        const revealButton = document.getElementById("7habbitsButton");
+        const contentContainer = document.getElementById("7HabbitsContainer");
+        const hiddenText = document.getElementById("7HabbitsText");
+        const hiddenImage = document.getElementById("7HabbitsImage");
     
         // Add a click event listener to the button
         revealButton.addEventListener("click", function() {
