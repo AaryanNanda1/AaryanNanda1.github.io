@@ -7,30 +7,8 @@
         <meta name="description" content="...">
         <title>My First Website</title>
         <style>
-            header{background-color: #010000; color: #FFFFFF;padding: 20px;text-align: center;}
-
-            main{padding: 20px;}
-
-            /* Style for the left and right sections */
-            #left-section {width: 30%; /* Adjust the width of the left section as needed */ float: left; background-color: #E75110; /* Set the background color for the left section */}
-    
-            #right-section {width: 70%; /* Adjust the width of the right section as needed */ float: left; background-color: #CD7A9B; /* Set the background color for the right section */}
-    
-            /* Clear the float to prevent layout issues */
-            .clearfix::after {content: ""; clear: both; display: table;}
-    
-            /* Add some padding and margin for spacing */
-            body {margin: 0; padding: 0;}
-    
-            /* Optional: Add some styles to improve the visual appearance */
-            body {font-family: Arial, sans-serif; background-color: #010000; /* Set a background color for the entire page */}
-    
-            /* Style for content within the sections */
-            #left-content, #right-content {padding: 20px; /* Add padding for content within the sections */}
-
-            img {width: 300px; border-radius: 0px; float: left; margin-right: 20px;}
+            /* Your CSS styles here... */
         </style> 
-    
     </head>
     <body>
         <header>
@@ -63,7 +41,7 @@
                     
                     <!-- Container for Atomic Habits content -->
                     <div id="AtomicHabbitsContainer" style="display: none;">
-                        <img id="AtomicHabbitsImage" src="Outliers book cover.jpeg" alt="Atomic Habits Image">
+                        <img id="AtomicHabbitsImage" src="Atomic Habits.jpg" alt="Atomic Habits Image">
                         <p id="AtomicHabbitsText">Atomic Habits content goes here.</p>
                     </div>
                 </div>
@@ -77,10 +55,17 @@
     
             // Add a click event listener to the 7HabbitsButton
             revealButton.addEventListener("click", function() {
+                // Hide all content containers
+                document.getElementById("7HabbitsContainer").style.display = "none";
+                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                
                 // Toggle the visibility of the 7 Habits content container
-                if (contentContainer.style.display === "none") 
-                    {contentContainer.style.display = "block";} 
-                else {contentContainer.style.display = "none";}});
+                if (contentContainer.style.display === "none") {
+                    contentContainer.style.display = "block";
+                } else {
+                    contentContainer.style.display = "none";
+                }
+            });
 
             // Get references to the button, text, and image elements for Atomic Habits
             const revealButton1 = document.getElementById("AtomicHabbitsButton");
@@ -88,10 +73,17 @@
     
             // Add a click event listener to the AtomicHabbitsButton
             revealButton1.addEventListener("click", function() {
+                // Hide all content containers
+                document.getElementById("7HabbitsContainer").style.display = "none";
+                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                
                 // Toggle the visibility of the Atomic Habits content container
-                if (contentContainer1.style.display === "none") 
-                    {contentContainer1.style.display = "block";} 
-                else {contentContainer1.style.display = "none";}});
+                if (contentContainer1.style.display === "none") {
+                    contentContainer1.style.display = "block";
+                } else {
+                    contentContainer1.style.display = "none";
+                }
+            });
         </script>
     </body>
 </html>
