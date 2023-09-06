@@ -6,42 +6,93 @@
         <meta name="keywords" content="Aaryan, Nanda">
         <meta name="description" content="...">
         <title>My First Website</title>
-
-        
+    
         <style>
-            header {background-color: #42686e; color: #FFFFFF; padding: 20px; text-align: center;}
-
-            main {padding: 20px;}
-
+            /* Reset some default styles */
+            body, h1, p {
+                margin: 0;
+                padding: 0;
+            }
+    
+            /* Set a modern and clean font */
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f0f0f0; /* Light gray background */
+            }
+    
+            header {
+                background-color: #000; /* Black header background */
+                color: #fff; /* White text color */
+                padding: 20px;
+                text-align: center;
+            }
+    
+            main {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+    
             /* Style for the left and right sections */
-            #left-section {width: 30%; /* Adjust the width of the left section as needed */ float: left; background-color: #1b9afa; /* Set the background color for the left section */}
+            #left-section {
+                flex: 1;
+                background-color: #fff; /* White background */
+                border-radius: 10px;
+                padding: 20px;
+                margin-right: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            }
     
-            #right-section {width: 70%; /* Adjust the width of the right section as needed */ float: left; background-color: #92a5a8; /* Set the background color for the right section */}
-    
-            /* Clear the float to prevent layout issues */
-            .clearfix::after {content: ""; clear: both; display: table;}
-    
-            /* Add some padding and margin for spacing */
-            body {margin: 0; padding: 0;}
-    
-            /* Optional: Add some styles to improve the visual appearance */
-            body {font-family: Arial, sans-serif; background-color: #42686e; /* Set a background color for the entire page */}
+            #right-section {
+                flex: 2;
+                background-color: #fff; /* White background */
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            }
     
             /* Style for content within the sections */
-            #left-content, #right-content {padding: 20px; /* Add padding for content within the sections */}
-
-            img {width: 300px; border: 1px solid #080000; float: left; margin-right: 20px;}
-            
-        </style> 
-
-        
+            h2 {
+                color: #000; /* Black text color */
+            }
+    
+            p {
+                color: #555; /* Dark gray text color */
+                line-height: 1.4;
+            }
+    
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+    
+            /* Button style */
+            button {
+                background-color: #000; /* Black button background */
+                color: #fff; /* White text color */
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 10px;
+                transition: background-color 0.3s ease;
+            }
+    
+            button:hover {
+                background-color: #333; /* Darker background on hover */
+            }
+        </style>
     </head>
     <body>
         <header>
             <h1>Welcome to My Website</h1>
             <p>This is the header section.</p>
         </header>
-        
+    
         <main>
             <div id="left-section">
                 <div id="left-content">
@@ -58,13 +109,13 @@
                     <!-- Content for the right section goes here -->
                     <h2>Right Section</h2>
                     <p>This is the larger section on the right side of the screen.</p>
-                    
+    
                     <!-- Container for 7 Habits content -->
                     <div id="7HabbitsContainer" style="display: none;">
                         <img id="7HabbitsImage" src="7 Habbits.jpg" alt="7 Habits Image">
-                        <p id="7HabbitsText">Stephen R. Covey’s book <i>7 habits of highly effective people</i> covers 7 habits you can incorporate into your life to help you achieve your goals and they are as follows: <br><br><b>1. Be proactive.</b> In this habit Covey explains the fact that inorder to achieve your goals you need to be in control of your actions and he suggests that in order to do so you must limit your reactionary decisions (decisions made as a result of external circumstances) and focus on things in your “Circle of Influence” or things in life that you can control. <br><br><b>2. Begin with the end in mind.</b> This habit has an individual clearly define their goals personal and professional and create a mission statement connected to said goal that outlines your values and principals while keeping your goal in view creating a blueprint for you that will help guide your decisions and actions towards achieving said goal. <br><br><b>3. Put first things first.</b> This habit builds on the work you have done as part of “Begin with the end in mind” and has you complete tasks not in order of urgency but inorder of significance with regards to the goals you have created. Inorder to do this Covery also explains that in some cases you may need to say no to distractions and less important tasks in order to allow you to focus on your goals. <br><br><b>4. Think Win - Win.</b> To think win -win is to try and identify a solution or course of action that results in all parties because this will help you build trust and cooperate with others rather than compete with them. <br><br><b>5. Seek First to Understand, Then be Understood.</b> This habit explains the importance of active listening when it comes to effective communication and successful persuasion. Active listening is huge for effective communication because when you are able to empathize with who you are listening to you are able to understand them at a higher level. Using this further understanding you are able to tailor your methods of persuasion inorder to suit who you are talking to. <br><br><b>6. Synergize.</b> To synergize is to work with a variety of people with different skill sets and perspectives. This variety in skillsets and perspectives when incorporated correctly in a collaborative manner can cope up with unique and innovative solutions to a variety of problems that may not have been solved by you alone. So in simple terms sometimes it’s okay to ask for help and work collaboratively with someone towards a solution to a problem. <br><br><b>7. Sharpen the Saw.</b> Sharpening the saw is all about self - care and stressing the importance of taking time for yourself in order to improve 4 categories of your personal health (physical, mental, emotional and spiritual). Covey uses a saw as a metaphor to express the fact that while sometimes saw must stop cutting inorder to be sharpened after being sharpen the saw is much more efficient similarly to how while me may get sucked into the world of constant work sometimes a small break gives your body enough rest in order to come back much stronger than before improving your efficiency. <br><br>Covey is able to communicate these 7 habits using a variety of examples and diagrams helping further illustrate his points while also leaving you a series of ways you can incorporate each habit into your own life by providing tips at the end of each chapter.</p>
+                        <p id="7HabbitsText">Stephen R. Covey’s book <i>7 habits of highly effective people</i> covers 7 habits you can incorporate into your life to help you achieve your goals and they are as follows: <br><br><b>1. Be proactive.</b> In this habit Covey explains the fact that in order to achieve your goals you need to be in control of your actions and he suggests that in order to do so you must limit your reactionary decisions (decisions made as a result of external circumstances) and focus on things in your “Circle of Influence” or things in life that you can control. <br><br><b>2. Begin with the end in mind.</b> This habit has an individual clearly define their goals personal and professional and create a mission statement connected to said goal that outlines your values and principals while keeping your goal in view creating a blueprint for you that will help guide your decisions and actions towards achieving said goal. <br><br><b>3. Put first things first.</b> This habit builds on the work you have done as part of “Begin with the end in mind” and has you complete tasks not in order of urgency but in order of significance with regards to the goals you have created. In order to do this Covey also explains that in some cases you may need to say no to distractions and less important tasks in order to allow you to focus on your goals. <br><br><
                     </div>
-                    
+                        
                     <!-- Container for Atomic Habits content -->
                     <div id="AtomicHabbitsContainer" style="display: none;">
                         <img id="AtomicHabbitsImage" src="Atomic Habits.jpg" alt="Atomic Habits Image">
@@ -73,7 +124,7 @@
                 </div>
             </div>
         </main>
-
+    
         <script>
             // Get references to the button, text, and image elements for 7 Habits
             const revealButton = document.getElementById("7HabbitsButton");
@@ -89,7 +140,7 @@
                 if (contentContainer.style.display === "none") {
                     contentContainer.style.display = "block";} 
                 else {contentContainer.style.display = "none";}});
-
+    
             // Get references to the button, text, and image elements for Atomic Habits
             const revealButton1 = document.getElementById("AtomicHabbitsButton");
             const contentContainer1 = document.getElementById("AtomicHabbitsContainer");
