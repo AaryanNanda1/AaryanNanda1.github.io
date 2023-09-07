@@ -71,72 +71,72 @@
             margin: 0 auto;
         }
     </style>
-</head>
-    <body>
-<header>
-    <h1>Welcome to My Website</h1>
-    <p>This is the header section.</p>
-</header>
-
-<main>
-    <section class="section">
-        <!-- Content for the left section goes here -->
-        <h2>Left Section</h2>
-        <p>This is the smaller section on the left side of the screen.</p>
-        <button id="7HabitsButton">Reveal 7 Habits</button>
-        <button id="AtomicHabitsButton">Reveal Atomic Habits</button>
-    </section>
-
-    <section class="section">
-        <!-- Content for the right section goes here -->
-        <h2>Right Section</h2>
-        <p>This is the larger section on the right side of the screen.</p>
-
-        <!-- Container for 7 Habits content -->
-        <div id="7HabbitsContainer" style="display: none;">
-            <img id="7HabbitsImage" src="7 Habbits.jpg" alt="7 Habits Image">
-            <p id="7HabbitsText">Stephen R. Covey’s book <i>7 habits of highly effective people</i> covers 7 habits you can incorporate into your life to help you achieve your goals and they are as follows: <br><br><b>1. Be proactive.</b> In this habit Covey explains the fact that inorder to achieve your goals you need to be in control of your actions and he suggests that in order to do so you must limit your reactionary decisions (decisions made as a result of external circumstances) and focus on things in your “Circle of Influence” or things in life that you can control. <br><br><b>2. Begin with the end in mind.</b> This habit has an individual clearly define their goals personal and professional and create a mission statement connected to said goal that outlines your values and principals while keeping your goal in view creating a blueprint for you that will help guide your decisions and actions towards achieving said goal. <br><br><b>3. Put first things first.</b> This habit builds on the work you have done as part of “Begin with the end in mind” and has you complete tasks not in order of urgency but inorder of significance with regards to the goals you have created. Inorder to do this Covery also explains that in some cases you may need to say no to distractions and less important tasks in order to allow you to focus on your goals. <br><br><b>4. Think Win - Win.</b> To think win -win is to try and identify a solution or course of action that results in all parties because this will help you build trust and cooperate with others rather than compete with them. <br><br><b>5. Seek First to Understand, Then be Understood.</b> This habit explains the importance of active listening when it comes to effective communication and successful persuasion. Active listening is huge for effective communication because when you are able to empathize with who you are listening to you are able to understand them at a higher level. Using this further understanding you are able to tailor your methods of persuasion inorder to suit who you are talking to. <br><br><b>6. Synergize.</b> To synergize is to work with a variety of people with different skill sets and perspectives. This variety in skillsets and perspectives when incorporated correctly in a collaborative manner can cope up with unique and innovative solutions to a variety of problems that may not have been solved by you alone. So in simple terms sometimes it’s okay to ask for help and work collaboratively with someone towards a solution to a problem. <br><br><b>7. Sharpen the Saw.</b> Sharpening the saw is all about self - care and stressing the importance of taking time for yourself in order to improve 4 categories of your personal health (physical, mental, emotional and spiritual). Covey uses a saw as a metaphor to express the fact that while sometimes saw must stop cutting inorder to be sharpened after being sharpen the saw is much more efficient similarly to how while me may get sucked into the world of constant work sometimes a small break gives your body enough rest in order to come back much stronger than before improving your efficiency. <br><br>Covey is able to communicate these 7 habits using a variety of examples and diagrams helping further illustrate his points while also leaving you a series of ways you can incorporate each habit into your own life by providing tips at the end of each chapter.</p>
-        </div>
+    </head>
         
-        <!-- Container for Atomic Habits content -->
-        <div id="AtomicHabbitsContainer" style="display: none;">
-            <img id="AtomicHabbitsImage" src="Atomic Habits.jpg" alt="Atomic Habits Image">
-            <p id="AtomicHabbitsText">Atomic Habits content goes here.</p>
-        </div>
-        </div>
-    </div>
-</main>
-
-    <script>
-        // Get references to the button, text, and image elements for 7 Habits
-        const revealButton = document.getElementById("7HabbitsButton");
-        const contentContainer = document.getElementById("7HabbitsContainer");
-
-        // Add a click event listener to the 7HabbitsButton
-        revealButton.addEventListener("click", function() {
-            // Hide all content containers
-            document.getElementById("7HabbitsContainer").style.display = "none";
-            document.getElementById("AtomicHabbitsContainer").style.display = "none";
-            
-            // Toggle the visibility of the 7 Habits content container
-            if (contentContainer.style.display === "none") {
-                contentContainer.style.display = "block";} 
-            else {contentContainer.style.display = "none";}});
-
-        // Get references to the button, text, and image elements for Atomic Habits
-        const revealButton1 = document.getElementById("AtomicHabbitsButton");
-        const contentContainer1 = document.getElementById("AtomicHabbitsContainer");
-
-        // Add a click event listener to the AtomicHabbitsButton
-        revealButton1.addEventListener("click", function() {
-            // Hide all content containers
-            document.getElementById("7HabbitsContainer").style.display = "none";
-            document.getElementById("AtomicHabbitsContainer").style.display = "none";
-            
-            // Toggle the visibility of the Atomic Habits content container
-            if (contentContainer1.style.display === "none") 
-                {contentContainer1.style.display = "block";} 
-            else {contentContainer1.style.display = "none";}});
+    <body>
+        <header>
+            <h1>Welcome to My Website</h1>
+            <p>This is the header section.</p>
+        </header>
+    
+        <main>
+            <section class="section">
+                <!-- Content for the left section goes here -->
+                <h2>Left Section</h2>
+                <p>This is the smaller section on the left side of the screen.</p>
+                <button id="7HabitsButton">Reveal 7 Habits</button>
+                <button id="AtomicHabitsButton">Reveal Atomic Habits</button>
+            </section>
+        
+            <section class="section">
+                <!-- Content for the right section goes here -->
+                <h2>Right Section</h2>
+                <p>This is the larger section on the right side of the screen.</p>
+        
+                <!-- Container for 7 Habits content -->
+                <div id="7HabbitsContainer" style="display: none;">
+                    <img id="7HabbitsImage" src="7 Habbits.jpg" alt="7 Habits Image">
+                    <p id="7HabbitsText">Stephen R. Covey’s book <i>7 habits of highly effective people</i> covers 7 habits you can incorporate into your life to help you achieve your goals and they are as follows: <br><br><b>1. Be proactive.</b> In this habit Covey explains the fact that inorder to achieve your goals you need to be in control of your actions and he suggests that in order to do so you must limit your reactionary decisions (decisions made as a result of external circumstances) and focus on things in your “Circle of Influence” or things in life that you can control. <br><br><b>2. Begin with the end in mind.</b> This habit has an individual clearly define their goals personal and professional and create a mission statement connected to said goal that outlines your values and principals while keeping your goal in view creating a blueprint for you that will help guide your decisions and actions towards achieving said goal. <br><br><b>3. Put first things first.</b> This habit builds on the work you have done as part of “Begin with the end in mind” and has you complete tasks not in order of urgency but inorder of significance with regards to the goals you have created. Inorder to do this Covery also explains that in some cases you may need to say no to distractions and less important tasks in order to allow you to focus on your goals. <br><br><b>4. Think Win - Win.</b> To think win -win is to try and identify a solution or course of action that results in all parties because this will help you build trust and cooperate with others rather than compete with them. <br><br><b>5. Seek First to Understand, Then be Understood.</b> This habit explains the importance of active listening when it comes to effective communication and successful persuasion. Active listening is huge for effective communication because when you are able to empathize with who you are listening to you are able to understand them at a higher level. Using this further understanding you are able to tailor your methods of persuasion inorder to suit who you are talking to. <br><br><b>6. Synergize.</b> To synergize is to work with a variety of people with different skill sets and perspectives. This variety in skillsets and perspectives when incorporated correctly in a collaborative manner can cope up with unique and innovative solutions to a variety of problems that may not have been solved by you alone. So in simple terms sometimes it’s okay to ask for help and work collaboratively with someone towards a solution to a problem. <br><br><b>7. Sharpen the Saw.</b> Sharpening the saw is all about self - care and stressing the importance of taking time for yourself in order to improve 4 categories of your personal health (physical, mental, emotional and spiritual). Covey uses a saw as a metaphor to express the fact that while sometimes saw must stop cutting inorder to be sharpened after being sharpen the saw is much more efficient similarly to how while me may get sucked into the world of constant work sometimes a small break gives your body enough rest in order to come back much stronger than before improving your efficiency. <br><br>Covey is able to communicate these 7 habits using a variety of examples and diagrams helping further illustrate his points while also leaving you a series of ways you can incorporate each habit into your own life by providing tips at the end of each chapter.</p>
+                </div>
+                
+                <!-- Container for Atomic Habits content -->
+                <div id="AtomicHabbitsContainer" style="display: none;">
+                    <img id="AtomicHabbitsImage" src="Atomic Habits.jpg" alt="Atomic Habits Image">
+                    <p id="AtomicHabbitsText">Atomic Habits content goes here.</p>
+                </div>
+            </section>
+        </main>
+    
+        <script>
+            // Get references to the button, text, and image elements for 7 Habits
+            const revealButton = document.getElementById("7HabbitsButton");
+            const contentContainer = document.getElementById("7HabbitsContainer");
+    
+            // Add a click event listener to the 7HabbitsButton
+            revealButton.addEventListener("click", function() {
+                // Hide all content containers
+                document.getElementById("7HabbitsContainer").style.display = "none";
+                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                
+                // Toggle the visibility of the 7 Habits content container
+                if (contentContainer.style.display === "none") {
+                    contentContainer.style.display = "block";} 
+                else {contentContainer.style.display = "none";}});
+    
+            // Get references to the button, text, and image elements for Atomic Habits
+            const revealButton1 = document.getElementById("AtomicHabbitsButton");
+            const contentContainer1 = document.getElementById("AtomicHabbitsContainer");
+    
+            // Add a click event listener to the AtomicHabbitsButton
+            revealButton1.addEventListener("click", function() {
+                // Hide all content containers
+                document.getElementById("7HabbitsContainer").style.display = "none";
+                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                
+                // Toggle the visibility of the Atomic Habits content container
+                if (contentContainer1.style.display === "none") 
+                    {contentContainer1.style.display = "block";} 
+                else {contentContainer1.style.display = "none";}});
         </script>
     </body>
 </html>
