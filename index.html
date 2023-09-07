@@ -139,6 +139,7 @@
             // Get references to the button, text, and image elements for 7 Habits
             const revealButton = document.getElementById("7HabbitsButton");
             const contentContainer = document.getElementById("7HabbitsContainer");
+            const contentContainerA = document.getElementById("MainMenue");
     
             // Add a click event listener to the 7HabbitsButton
             revealButton.addEventListener("click", function() {
@@ -147,13 +148,15 @@
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
                 
                 // Toggle the visibility of the 7 Habits content container
-                if (contentContainer.style.display === "none") {
-                    contentContainer.style.display = "block";} 
+                if (contentContainer.style.display === "none") 
+                    {contentContainer.style.display = "block";}
+                    {contentContainerA.style.display = "none";}
                 else {contentContainer.style.display = "none";}});
     
             // Get references to the button, text, and image elements for Atomic Habits
             const revealButton1 = document.getElementById("AtomicHabbitsButton");
             const contentContainer1 = document.getElementById("AtomicHabbitsContainer");
+            const contentContainerA = document.getElementById("MainMenue");
     
             // Add a click event listener to the AtomicHabbitsButton
             revealButton1.addEventListener("click", function() {
@@ -163,7 +166,8 @@
                 
                 // Toggle the visibility of the Atomic Habits content container
                 if (contentContainer1.style.display === "none") 
-                    {contentContainer1.style.display = "block";} 
+                    {contentContainer1.style.display = "block";}
+                    {contentContainerA.style.display = "none";}
                 else {contentContainer1.style.display = "none";}});
         </script>   
     </body>
