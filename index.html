@@ -125,21 +125,23 @@
         </main>
         <script>   
 
-             // Get references to the button, text, and image elements for 7 Habits
+             // Get references to the button, text, and image elements for Main Menue
             const mainMenueButton = document.getElementById("MainMenueButton");
             const mainMenueContainer = document.getElementById("MainMenue");
     
-            // Add a click event listener to the 7HabbitsButton
+            // Add a click event listener to the MenueButton
             mainMenueButton.addEventListener("click", function() {
                 // Hide all content containers
                 document.getElementById("MainMenue").style.display = "none";
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
                 
-                // Toggle the visibility of the 7 Habits content container
+                // Toggle the visibility of the Main Menue content container
                 if (mainMenueContainer.style.display === "none") 
                     {mainMenueContainer.style.display = "block";}
-                else {mainMenueContainer.style.display = "none";}});
+                else {mainMenueContainer.style.display = "none";
+                     }
+            });
             
             // Get references to the button, text, and image elements for 7 Habits
             const revealButton = document.getElementById("7HabbitsButton");
@@ -154,7 +156,9 @@
                 // Toggle the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
                     {contentContainer.style.display = "block"; mainMenueContainer.style.display = "none";}
-                else {contentContainer.style.display = "none";}});
+                else {contentContainer.style.display = "none";
+                     }
+            });
     
             // Get references to the button, text, and image elements for Atomic Habits
             const revealButton1 = document.getElementById("AtomicHabbitsButton");
@@ -169,7 +173,9 @@
                 // Toggle the visibility of the Atomic Habits content container
                 if (contentContainer1.style.display === "none") 
                     {contentContainer1.style.display = "block"; mainMenueContainer.style.display = "none";}
-                else {contentContainer1.style.display = "none";}});
+                else {contentContainer1.style.display = "none";
+                     }
+            });
         </script>   
     </body>
 </html>
