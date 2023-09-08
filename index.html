@@ -134,11 +134,37 @@
                 </div>
             </div>
         </main>
-        <script>
+        <script>   
+
+             // Get references to the button, text, and image elements for 7 Habits
+            const mainMenueButton = document.getElementById("7HabbitsButton");
+            const mainMenueContainer = document.getElementById("MainMenue");
+    
+            // Add a click event listener to the 7HabbitsButton
+            mainMenueButton.addEventListener("click", function() {
+                // Hide all content containers
+                document.getElementById("7HabbitsContainer").style.display = "none";
+                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("mainMenueContainer").style.display = "none";
+                
+                // Toggle the visibility of the 7 Habits content container
+                if (mainMenueContainer.style.display === "none") 
+                    {mainMenueContainer.style.display = "block";}
+                else {mainMenueContainer.style.display = "none";}});
+
+
+
+
+
+
+
+
+
+
+            
             // Get references to the button, text, and image elements for 7 Habits
             const revealButton = document.getElementById("7HabbitsButton");
             const contentContainer = document.getElementById("7HabbitsContainer");
-            const contentContainerA = document.getElementById("MainMenue");
     
             // Add a click event listener to the 7HabbitsButton
             revealButton.addEventListener("click", function() {
@@ -148,7 +174,7 @@
                 
                 // Toggle the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
-                    {contentContainer.style.display = "block"; contentContainerA.style.display = "none";}
+                    {contentContainer.style.display = "block"; mainMenueContainer.style.display = "none";}
                 else {contentContainer.style.display = "none";}});
     
             // Get references to the button, text, and image elements for Atomic Habits
@@ -163,7 +189,7 @@
                 
                 // Toggle the visibility of the Atomic Habits content container
                 if (contentContainer1.style.display === "none") 
-                    {contentContainer1.style.display = "block"; contentContainerA.style.display = "none";}
+                    {contentContainer1.style.display = "block"; mainMenueContainer.style.display = "none";}
                 else {contentContainer1.style.display = "none";}});
         </script>   
     </body>
