@@ -10,23 +10,12 @@
     
         <style>
             /* Reset some default styles */
-            body, h1, p {
-                margin: 0;
-                padding: 0;
-            }
+            body, h1, p {margin: 0; padding: 0;}
     
             /* Set a modern and clean font */
-            body {
-                font-family: 'Arial', sans-serif;
-                background-color: #f0f0f0; /* Light gray background */
-            }
+            body {font-family: 'Arial', sans-serif; background-color: #f0f0f0; /* Light gray background */}
     
-            header {
-                background-color: #000; /* Black header background */
-                color: #fff; /* White text color */
-                padding: 20px;
-                text-align: center;
-            }
+            header {background-color: #000; /* Black header background */ color: #fff; /* White text color */ padding: 20px; text-align: center;}
     
             main {
                 display: flex;
@@ -115,7 +104,6 @@
             <div id="right-section">
                 <div id="right-content">
                     <!-- Content for the right section goes here -->
-
                     <div id="MainMenue" style="display: block;">
                         <h2>Right Section</h2>
                         <p>This is the larger section on the right side of the screen.</p>
@@ -144,6 +132,7 @@
             // Add a click event listener to the 7HabbitsButton
             mainMenueButton.addEventListener("click", function() {
                 // Hide all content containers
+                 document.getElementById("MainMenue").style.display = "none";
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
                 
