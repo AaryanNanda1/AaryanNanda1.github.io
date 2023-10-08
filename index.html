@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -104,7 +105,7 @@
                 <div id="left-content">
                     <!-- Content for the left section goes here -->
                     <div class="button-container">
-                        <button id="MainMenuButton">Main Menu</button>
+                        <button id="MainMenueButton">Main Menue</button>
                         <button id="7HabbitsButton">The 7 Habits Of Highly Effective People</button>
                         <button id="AtomicHabbitsButton">Atomic Habits</button>
                     </div>
@@ -114,7 +115,7 @@
             <div id="right-section">
                 <div id="right-content">
                     <!-- Content for the right section goes here -->
-                    <div id="MainMenu" style="display: block;">
+                    <div id="MainMenue" style="display: block;">
                         <h2>Right Section</h2>
                         <p>This is the larger section on the right side of the screen.</p>
                     </div>
@@ -135,21 +136,21 @@
         </main>
         <script>   
 
-             // Get references to the button, text, and image elements for Main Menu
-            const mainMenuButton = document.getElementById("MainMenuButton");
-            const mainMenuContainer = document.getElementById("MainMenu");
+             // Get references to the button, text, and image elements for Main Menue
+            const mainMenueButton = document.getElementById("MainMenueButton");
+            const mainMenueContainer = document.getElementById("MainMenue");
     
-            // Add a click event listener to the MenuButton
-            mainMenuButton.addEventListener("click", function() {
+            // Add a click event listener to the MenueButton
+            mainMenueButton.addEventListener("click", function() {
                 // Hide all content containers
-                document.getElementById("MainMenu").style.display = "none";
+                document.getElementById("MainMenue").style.display = "none";
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
                 
-                // Toggle the visibility of the Main Menu content container
-                if (mainMenuContainer.style.display === "none") 
-                    {mainMenuContainer.style.display = "block";}
-                else {mainMenuContainer.style.display = "none";
+                // Toggle the visibility of the Main Menue content container
+                if (mainMenueContainer.style.display === "none") 
+                    {mainMenueContainer.style.display = "block";}
+                else {mainMenueContainer.style.display = "none";
                      }
             });
             
@@ -165,7 +166,7 @@
                 
                 // Toggle the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
-                    {contentContainer.style.display = "block"; mainMenuContainer.style.display = "none";}
+                    {contentContainer.style.display = "block"; mainMenueContainer.style.display = "none";}
                 else {contentContainer.style.display = "none";
                      }
             });
@@ -182,7 +183,7 @@
                 
                 // Toggle the visibility of the Atomic Habits content container
                 if (contentContainer1.style.display === "none") 
-                    {contentContainer1.style.display = "block"; mainMenuContainer.style.display = "none";}
+                    {contentContainer1.style.display = "block"; mainMenueContainer.style.display = "none";}
                 else {contentContainer1.style.display = "none";
                      }
             });
