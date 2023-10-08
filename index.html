@@ -104,7 +104,7 @@
                 <div id="left-content">
                     <!-- Content for the left section goes here -->
                     <div class="button-container">
-                        <button id="MainMenueButton">Main Menue</button>
+                        <button id="MainMenuButton">Main Menu</button>
                         <button id="7HabbitsButton">The 7 Habits Of Highly Effective People</button>
                         <button id="AtomicHabbitsButton">Atomic Habits</button>
                     </div>
@@ -114,7 +114,7 @@
             <div id="right-section">
                 <div id="right-content">
                     <!-- Content for the right section goes here -->
-                    <div id="MainMenue" style="display: block;">
+                    <div id="MainMenu" style="display: block;">
                         <h2>Right Section</h2>
                         <p>This is the larger section on the right side of the screen.</p>
                     </div>
@@ -135,9 +135,9 @@
         </main>
         <script>   
 
-             // Get references to the button, text, and image elements for Main Menue
-            const mainMenueButton = document.getElementById("MainMenueButton");
-            const mainMenueContainer = document.getElementById("MainMenue");
+             // Get references to the button, text, and image elements for Main Menu
+            const mainMenueButton = document.getElementById("MainMenuButton");
+            const mainMenueContainer = document.getElementById("MainMenu");
     
             // Add a click event listener to the MenueButton
             mainMenueButton.addEventListener("click", function() {
@@ -146,10 +146,10 @@
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
                 
-                // Toggle the visibility of the Main Menue content container
-                if (mainMenueContainer.style.display === "none") 
-                    {mainMenueContainer.style.display = "block";}
-                else {mainMenueContainer.style.display = "none";
+                // Toggle the visibility of the Main Menu content container
+                if (mainMenuContainer.style.display === "none") 
+                    {mainMenuContainer.style.display = "block";}
+                else {mainMenuContainer.style.display = "none";
                      }
             });
             
