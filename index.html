@@ -107,6 +107,7 @@
                         <button id="MainMenueButton">Main Menue</button>
                         <button id="7HabbitsButton">The 7 Habits Of Highly Effective People</button>
                         <button id="AtomicHabbitsButton">Atomic Habits</button>
+                        <button id="Straight-AButton">How To Become a Straight-A Student</button>
                     </div>
                 </div>
             </div>
@@ -130,6 +131,13 @@
                         <img id="AtomicHabbitsImage" src="Atomic Habits.jpg" alt="Atomic Habits Image">
                         <p id="AtomicHabbitsText">James Clear’s book <i>Atomic Habits</i> takes the approach of helping you achieve your goals by creating small or atomic habits that you can insert into your daily routine. The rationale behind such an idea is it is easier for you to make numerous small changes to your daily routine rather than one large change. James also outlines the key considerations to be made when incorporating these small habits into your life: <br><b>Make it Obvious</b> - make easy to identify triggers to help you begin your habit <br><b>Make it Attractive</b> - Associate positive emotions with your habit <br><b>Make it Easy</b> - Simply it, streamline the execution of the habit <br><b>Make it Satisfying</b> - Set the habit up to satisfy the human need of instant gratification</p>
                     </div>
+
+                    <!-- Container for Straight-A content -->
+                    <div id="Straight-AContainer" style="display: none;">
+                        <img id="Straight-AImage" src="Straight-A.jpg" alt="Straight-A Image">
+                        <p id="Straight-AText">Straight-A content</p>
+                    </div>
+                    
                 </div>
             </div>
         </main>
@@ -145,6 +153,7 @@
                 document.getElementById("MainMenue").style.display = "none";
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("Straight-AContainer").style.display = "none";
                 
                 // Toggle the visibility of the Main Menue content container
                 if (mainMenueContainer.style.display === "none") 
@@ -162,6 +171,7 @@
                 // Hide all content containers
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("Straight-AContainer").style.display = "none";
                 
                 // Toggle the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
@@ -179,6 +189,7 @@
                 // Hide all content containers
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("Straight-AContainer").style.display = "none";
                 
                 // Toggle the visibility of the Atomic Habits content container
                 if (contentContainer1.style.display === "none") 
@@ -186,6 +197,24 @@
                 else {contentContainer1.style.display = "none";
                      }
             });
+
+            // Get references to the button, text, and image elements for Straight-A
+            const revealButton2 = document.getElementById("Straight-AButton");
+            const contentContainer2 = document.getElementById("Straight-AContainer");
+    
+            // Add a click event listener to the Straight-AButton
+            revealButton2.addEventListener("click", function() {
+                // Hide all content containers
+                document.getElementById("7HabbitsContainer").style.display = "none";
+                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("Straight-AContainer").style.display = "none";
+                
+                // Toggle the visibility of the Straight-A content container
+                if (contentContainer2.style.display === "none") 
+                    {contentContainer2.style.display = "block"; mainMenueContainer.style.display = "none";}
+                else {contentContainer2.style.display = "none";
+                     }
+            });   
         </script>   
     </body>
 </html>
