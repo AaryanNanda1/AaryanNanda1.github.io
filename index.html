@@ -108,6 +108,7 @@
                         <button id="7HabbitsButton">The 7 Habits Of Highly Effective People</button>
                         <button id="AtomicHabbitsButton">Atomic Habits</button>
                         <button id="Straight-AButton">How to Become a Straight-A Student</button>
+                        <button id="TimeManagementButton">15 Secrets Successful People Know About Time Management</button>
                     </div>
                 </div>
             </div>
@@ -161,6 +162,13 @@
                             <br><br>In essence, <i>How to Become a Straight-A Student</i> offers a comprehensive guide to academic success by emphasizing effective study techniques, time management, and a structured approach to learning. It encourages students to adopt proactive learning strategies and habits that can lead to improved grades and a more fulfilling learning experience.
                         </p>
                     </div> 
+
+                    <!-- Container for TimeManagement content -->
+                    <div id="TimeManagementContainer" style="display: none;">
+                        <img id="TimeManagementImage" src="TimeManagement.jpg" alt="TimeManagement Image">
+                        <p id="TimeManagementText">Time Management content</p>
+                    </div> 
+                    
                 </div>
             </div>
         </main>
@@ -177,6 +185,7 @@
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
+                document.getElementById("TimeManagementContainer").style.display = "none";
                 
                 // Toggle the visibility of the Main Menu content container
                 if (mainMenuContainer.style.display === "none") 
@@ -195,6 +204,7 @@
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
+                document.getElementById("TimeManagementContainer").style.display = "none";
                 
                 // Toggle the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
@@ -213,6 +223,7 @@
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
+                document.getElementById("TimeManagementContainer").style.display = "none";
                 
                 // Toggle the visibility of the Atomic Habits content container
                 if (contentContainer1.style.display === "none") 
@@ -231,13 +242,34 @@
                 document.getElementById("7HabbitsContainer").style.display = "none";
                 document.getElementById("AtomicHabbitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
+                document.getElementById("TimeManagementContainer").style.display = "none";
                 
                 // Toggle the visibility of the Straight-A content container
                 if (contentContainer2.style.display === "none") 
                     {contentContainer2.style.display = "block"; mainMenuContainer.style.display = "none";}
                 else {contentContainer2.style.display = "none";
                      }
+            });
+
+            // Get references to the button, text, and image elements for TimeManagement
+            const revealButton3 = document.getElementById("TimeManagementButton");
+            const contentContainer3 = document.getElementById("TimeManagementContainer");
+    
+            // Add a click event listener to the Straight-AButton
+            revealButton3.addEventListener("click", function() {
+                // Hide all content containers
+                document.getElementById("7HabbitsContainer").style.display = "none";
+                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("Straight-AContainer").style.display = "none";
+                document.getElementById("TimeManagementContainer").style.display = "none";
+                
+                // Toggle the visibility of the Straight-A content container
+                if (contentContainer3.style.display === "none") 
+                    {contentContainer3.style.display = "block"; mainMenuContainer.style.display = "none";}
+                else {contentContainer3.style.display = "none";
+                     }
             });   
+            
         </script>   
     </body>
 </html>
