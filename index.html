@@ -219,9 +219,6 @@
             const revealButton = document.getElementById("7habitsButton");
             const contentContainer = document.getElementById("7habitsContainer");
             const video = document.querySelector("video");
-
-            // Variable to track whether the video was paused
-            let isVideoPaused = false;
             
             // Add a click event listener to the 7habitsButton
             revealButton.addEventListener("click", function() {
@@ -231,22 +228,11 @@
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
 
-                // Check if the video was paused, and if so, resume it
-                if (isVideoPaused) {
-                    video.play();
-                    isVideoPaused = false; // Reset the flag
-                }
-                
                 // Toggle the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
                     {contentContainer.style.display = "block"; mainMenuContainer.style.display = "none";}
                 else {contentContainer.style.display = "none";
                      }
-            });
-
-            // Pauses the video when leaving the 7 habits screen
-            video.addEventListener("pause", function() {
-                isVideoPaused = true;
             });
 
             // Get references to the button, text, and image elements for Atomic Habits
