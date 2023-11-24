@@ -106,8 +106,8 @@
                     <!-- Content for the left section goes here -->
                     <div class="button-container">
                         <button id="MainMenuButton">Main Menu</button>
-                        <button id="7HabbitsButton">The 7 Habits Of Highly Effective People</button>
-                        <button id="AtomicHabbitsButton">Atomic Habits</button>
+                        <button id="7habitsButton">The 7 Habits Of Highly Effective People</button>
+                        <button id="AtomichabitsButton">Atomic Habits</button>
                         <button id="Straight-AButton">How to Become a Straight-A Student</button>
                         <button id="TimeManagementButton">15 Secrets Successful People Know About Time Management</button>
                     </div>
@@ -120,15 +120,12 @@
                     <div id="MainMenu" style="display: block;">
                         <h2>Right Section</h2>
                         <p>This is the larger section on the right side of the screen.</p>
-                        <video width="500px" height="500px" controls="controls">
-                        <source src="Stock Video.mp4" type="video/mp4"/>
-                        </video>
                     </div>
 
                     <!-- Container for 7 Habits content -->
-                    <div id="7HabbitsContainer" style="display: none;">
-                        <img id="7HabbitsImage" src="7 Habbits.jpg" alt="7 Habits Image">
-                        <p id="7HabbitsText">Stephen R. Covey’s book <i>7 Habits Of Highly Effective People</i> covers 7 habits you can incorporate into your life to help you achieve your goals and they are as follows: 
+                    <div id="7habitsContainer" style="display: none;">
+                        <img id="7habitsImage" src="7 habits.jpg" alt="7 Habits Image">
+                        <p id="7habitsText">Stephen R. Covey’s book <i>7 Habits Of Highly Effective People</i> covers 7 habits you can incorporate into your life to help you achieve your goals and they are as follows: 
                             <br><br><b>1. Be proactive.</b> In this habit Covey explains the fact that inorder to achieve your goals you need to be in control of your actions and he suggests that in order to do so you must limit your reactionary decisions (decisions made as a result of external circumstances) and focus on things in your “Circle of Influence” or things in life that you can control. 
                             <br><br><b>2. Begin with the end in mind.</b> This habit has an individual clearly define their goals personal and professional and create a mission statement connected to said goal that outlines your values and principals while keeping your goal in view creating a blueprint for you that will help guide your decisions and actions towards achieving said goal. 
                             <br><br><b>3. Put first things first.</b> This habit builds on the work you have done as part of “Begin with the end in mind” and has you complete tasks not in order of urgency but inorder of significance with regards to the goals you have created. Inorder to do this Covery also explains that in some cases you may need to say no to distractions and less important tasks in order to allow you to focus on your goals. 
@@ -138,12 +135,15 @@
                             <br><br><b>7. Sharpen the Saw.</b> Sharpening the saw is all about self - care and stressing the importance of taking time for yourself in order to improve 4 categories of your personal health (physical, mental, emotional and spiritual). Covey uses a saw as a metaphor to express the fact that while sometimes saw must stop cutting inorder to be sharpened after being sharpen the saw is much more efficient similarly to how while me may get sucked into the world of constant work sometimes a small break gives your body enough rest in order to come back much stronger than before improving your efficiency. 
                             <br><br>Covey is able to communicate these 7 habits using a variety of examples and diagrams helping further illustrate his points while also leaving you a series of ways you can incorporate each habit into your own life by providing tips at the end of each chapter.
                         </p>
+                            <video width="500px" height="500px" controls="controls">
+                            <source src="Stock Video.mp4" type="video/mp4"/>
+                            </video>
                     </div>
                         
                     <!-- Container for Atomic Habits content -->
-                    <div id="AtomicHabbitsContainer" style="display: none;">
-                        <img id="AtomicHabbitsImage" src="Atomic Habits.jpg" alt="Atomic Habits Image">
-                        <p id="AtomicHabbitsText">James Clear’s book <i>Atomic Habits</i> takes the approach of helping you achieve your goals by creating small or atomic habits that you can insert into your daily routine. The rationale behind such an idea is it is easier for you to make numerous small changes to your daily routine rather than one large change. James also outlines the key considerations to be made when incorporating these small habits into your life: 
+                    <div id="AtomichabitsContainer" style="display: none;">
+                        <img id="AtomichabitsImage" src="Atomic Habits.jpg" alt="Atomic Habits Image">
+                        <p id="AtomichabitsText">James Clear’s book <i>Atomic Habits</i> takes the approach of helping you achieve your goals by creating small or atomic habits that you can insert into your daily routine. The rationale behind such an idea is it is easier for you to make numerous small changes to your daily routine rather than one large change. James also outlines the key considerations to be made when incorporating these small habits into your life: 
                             <br><br><b>Make it Obvious</b> - make easy to identify triggers to help you begin your habit 
                             <br><br><b>Make it Attractive</b> - Associate positive emotions with your habit 
                             <br><br><b>Make it Easy</b> - Simplify it, streamline the execution of the habit 
@@ -198,13 +198,13 @@
              // Get references to the button, text, and image elements for Main Menu
             const mainMenuButton = document.getElementById("MainMenuButton");
             const mainMenuContainer = document.getElementById("MainMenu");
-    
+            
             // Add a click event listener to the MenuButton
             mainMenuButton.addEventListener("click", function() {
                 // Hide all content containers
                 document.getElementById("MainMenu").style.display = "none";
-                document.getElementById("7HabbitsContainer").style.display = "none";
-                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("7habitsContainer").style.display = "none";
+                document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 
@@ -216,16 +216,26 @@
             });
             
             // Get references to the button, text, and image elements for 7 Habits
-            const revealButton = document.getElementById("7HabbitsButton");
-            const contentContainer = document.getElementById("7HabbitsContainer");
-    
-            // Add a click event listener to the 7HabbitsButton
+            const revealButton = document.getElementById("7habitsButton");
+            const contentContainer = document.getElementById("7habitsContainer");
+            const video = document.querySelector("video");
+
+            // Variable to track whether the video was paused
+            let isVideoPaused = false;
+            
+            // Add a click event listener to the 7habitsButton
             revealButton.addEventListener("click", function() {
                 // Hide all content containers
-                document.getElementById("7HabbitsContainer").style.display = "none";
-                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("7habitsContainer").style.display = "none";
+                document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
+
+                // Check if the video was paused, and if so, resume it
+                if (isVideoPaused) {
+                    video.play();
+                    isVideoPaused = false; // Reset the flag
+                }
                 
                 // Toggle the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
@@ -233,16 +243,21 @@
                 else {contentContainer.style.display = "none";
                      }
             });
-    
+
+            // Pauses the video when leaving the 7 habits screen
+            video.addEventListener("pause", function() {
+                isVideoPaused = true;
+            });
+
             // Get references to the button, text, and image elements for Atomic Habits
-            const revealButton1 = document.getElementById("AtomicHabbitsButton");
-            const contentContainer1 = document.getElementById("AtomicHabbitsContainer");
+            const revealButton1 = document.getElementById("AtomichabitsButton");
+            const contentContainer1 = document.getElementById("AtomichabitsContainer");
     
-            // Add a click event listener to the AtomicHabbitsButton
+            // Add a click event listener to the AtomichabitsButton
             revealButton1.addEventListener("click", function() {
                 // Hide all content containers
-                document.getElementById("7HabbitsContainer").style.display = "none";
-                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("7habitsContainer").style.display = "none";
+                document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 
@@ -260,8 +275,8 @@
             // Add a click event listener to the Straight-AButton
             revealButton2.addEventListener("click", function() {
                 // Hide all content containers
-                document.getElementById("7HabbitsContainer").style.display = "none";
-                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("7habitsContainer").style.display = "none";
+                document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 
@@ -279,8 +294,8 @@
             // Add a click event listener to the Straight-AButton
             revealButton3.addEventListener("click", function() {
                 // Hide all content containers
-                document.getElementById("7HabbitsContainer").style.display = "none";
-                document.getElementById("AtomicHabbitsContainer").style.display = "none";
+                document.getElementById("7habitsContainer").style.display = "none";
+                document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 
