@@ -189,6 +189,22 @@
                             <br><br>The outlines of these 15 skills just scratches the surface when it comes to the methods that the author aims to teach you throughout the book inorder to improve your personal and professional life.
                         </p>
                     </div> 
+
+                    <!-- Container for How Money Works content -->
+                    <div id="MoneyContainer" style="display: none;">
+                        <img id="MoneyImage" src="Money.jpg" alt="Money Image">
+                        <p id="MoneyText">DK penguin house’s book <i>How Money Works</i> is an incredible resource for people new to the concept of finance. The book covers 4 key areas:
+                            <br><br><b>Money Basics</b>
+                            <br><br><b>Profit-Making and Financial Institutions</b>
+                            <br><br><b>Government Finance and Public Money</b>
+                            <br><br><b>Personal Finance</b>
+                            The book puts an emphasis on the use of statistics and images in order to help teach the financial concepts. This book is a must read especially for those interested in a career in finance, With the section personal finance section being the section I recommend everyone reads due to the fact that it covers topics that are applicable to everyone such as:
+                            <br><br>The nature and different types of investments one can make.
+                            <br><br>What debt is and how it is connected to loans, mortgages and credit cards.
+                            <br><br>How do pension plans work and why it is important to save and make investments for retirement.
+                            <br><br>How crypto currencies work such as bit coin     
+                        </p>
+                    </div>    
                 </div>
             </div>
         </main>
@@ -206,6 +222,7 @@
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
+                document.getElementById("MoneyContainer").style.display = "none";
                 
                 // Toggle the visibility of the Main Menu content container
                 if (mainMenuContainer.style.display === "none") 
@@ -225,6 +242,7 @@
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
+                document.getElementById("MoneyContainer").style.display = "none";
 
                 // Toggle the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
@@ -244,6 +262,7 @@
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
+                document.getElementById("MoneyContainer").style.display = "none";
                 
                 // Toggle the visibility of the Atomic Habits content container
                 if (contentContainer1.style.display === "none") 
@@ -256,13 +275,14 @@
             const revealButton2 = document.getElementById("Straight-AButton");
             const contentContainer2 = document.getElementById("Straight-AContainer");
     
-            // Add a click event listener to the Straight-AButton
+            // Add a click event listener to the Straight-A Button
             revealButton2.addEventListener("click", function() {
                 // Hide all content containers
                 document.getElementById("7habitsContainer").style.display = "none";
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
+                document.getElementById("MoneyContainer").style.display = "none";
                 
                 // Toggle the visibility of the Straight-A content container
                 if (contentContainer2.style.display === "none") 
@@ -275,18 +295,40 @@
             const revealButton3 = document.getElementById("TimeManagementButton");
             const contentContainer3 = document.getElementById("TimeManagementContainer");
     
-            // Add a click event listener to the Straight-AButton
+            // Add a click event listener to the TimeManagement Button
             revealButton3.addEventListener("click", function() {
                 // Hide all content containers
                 document.getElementById("7habitsContainer").style.display = "none";
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
+                document.getElementById("MoneyContainer").style.display = "none";
                 
-                // Toggle the visibility of the Straight-A content container
+                // Toggle the visibility of the TimeManagement content container
                 if (contentContainer3.style.display === "none") 
                     {contentContainer3.style.display = "block"; mainMenuContainer.style.display = "none";}
                 else {contentContainer3.style.display = "none";
+                     }
+            });   
+            
+            // Get references to the button, text, and image elements for Money
+            const revealButton4 = document.getElementById("MoneyButton");
+            const contentContainer4 = document.getElementById("MoneyContainer");
+    
+            // Add a click event listener to the Money Button
+            revealButton3.addEventListener("click", function() {
+                // Hide all content containers
+                document.getElementById("7habitsContainer").style.display = "none";
+                document.getElementById("AtomichabitsContainer").style.display = "none";
+                document.getElementById("Straight-AContainer").style.display = "none";
+                document.getElementById("TimeManagementContainer").style.display = "none";
+                document.getElementById("TimeManagementContainer").style.display = "none";
+                document.getElementById("MoneyContainer").style.display = "none";
+                
+                // Toggle the visibility of the Money content container
+                if (contentContainer4.style.display === "none") 
+                    {contentContainer4.style.display = "block"; mainMenuContainer.style.display = "none";}
+                else {contentContainer4.style.display = "none";
                      }
             });   
             
