@@ -136,7 +136,7 @@
                             <br><br>Covey is able to communicate these 7 habits using a variety of examples and diagrams helping further illustrate his points while also leaving you a series of ways you can incorporate each habit into your own life by providing tips at the end of each chapter.
                         </p>
                             <video width="500px" height="500px" controls="controls">
-                            <source src="Stock Video.mp4" type="video/mp4"/>
+                            <source id="7habbitsVideo" src="Stock Video.mp4" type="video/mp4"/>
                             </video>
                     </div>
                         
@@ -149,6 +149,9 @@
                             <br><br><b>Make it Easy</b> - Simplify it, streamline the execution of the habit 
                             <br><br><b>Make it Satisfying</b> - Set the habit up to satisfy the human need of instant gratification
                         </p>
+                            <video width="500px" height="500px" controls="controls">
+                            <source id="AtomichabitsVideo" src="Stock Video.mp4" type="video/mp4"/>
+                            </video>
                     </div>
 
                     <!-- Container for Straight-A content -->
@@ -165,6 +168,9 @@
                             <br><br><b>Balancing Work and Life:</b> The book acknowledges the importance of maintaining a balanced life outside of academics, including exercise, social activities, and relaxation, to support overall well-being and academic success. 
                             <br><br>In essence, <i>How to Become a Straight-A Student</i> offers a comprehensive guide to academic success by emphasizing effective study techniques, time management, and a structured approach to learning. It encourages students to adopt proactive learning strategies and habits that can lead to improved grades and a more fulfilling learning experience.
                         </p>
+                            <video width="500px" height="500px" controls="controls">
+                            <source id="Straight-AVideo" src="Stock Video.mp4" type="video/mp4"/>
+                            </video>     
                     </div> 
 
                     <!-- Container for TimeManagement content -->
@@ -188,8 +194,10 @@
                             <br><br><b>15. Reflection and Review:</b> Regularly reviewing their goals and progress helps successful individuals stay on track and make necessary adjustments.
                             <br><br>The outlines of these 15 skills just scratches the surface when it comes to the methods that the author aims to teach you throughout the book inorder to improve your personal and professional life.
                         </p>
+                            <video width="500px" height="500px" controls="controls">
+                            <source id="TimeManagementVideo" src="Stock Video.mp4" type="video/mp4"/>
+                            </video>
                     </div> 
-                    
                 </div>
             </div>
         </main>
@@ -218,10 +226,7 @@
             // Get references to the button, text, and image elements for 7 Habits
             const revealButton = document.getElementById("7habitsButton");
             const contentContainer = document.getElementById("7habitsContainer");
-            const video = document.querySelector("video");
-            
-            // Pause all videos
-            video.pause();
+            const video = document.querySelector("7habbitsVideo");
             
             // Add a click event listener to the 7habitsButton
             revealButton.addEventListener("click", function() {
@@ -233,15 +238,15 @@
 
                 // Toggle the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
-                    {contentContainer.style.display = "block"; mainMenuContainer.style.display = "none";}
+                    {contentContainer.style.display = "block"; mainMenuContainer.style.display = "none"; video.pause();}
                 else {contentContainer.style.display = "none";
                      }
-                    video.play()
             });
 
             // Get references to the button, text, and image elements for Atomic Habits
             const revealButton1 = document.getElementById("AtomichabitsButton");
             const contentContainer1 = document.getElementById("AtomichabitsContainer");
+            const video1 = document.querySelector("");
     
             // Add a click event listener to the AtomichabitsButton
             revealButton1.addEventListener("click", function() {
