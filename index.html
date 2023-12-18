@@ -37,25 +37,7 @@
                 background: url('Background.avif') center/cover; /* Content Outline Image */
                 border-radius: 10px
             }
-    
-            /* Style for the left and right sections */
-            #left-section {
-                flex: 1;
-                background-color: #fff; /* White background */
-                border-radius: 10px;
-                padding: 20px;
-                margin-right: 20px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-            }
-    
-            #right-section {
-                flex: 2;
-                background-color: #fff; /* White background */
-                border-radius: 10px;
-                padding: 20px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-            }
-    
+            
             /* Style for content within the sections */
             h2 {
                 color: #000; /* Black text color */
@@ -102,6 +84,27 @@
             button:hover {
                 background-color: #333; /* Darker background on hover */
             }
+
+            .flex-container {
+                /* Style for the left and right sections */
+                #left-section {
+                    flex: 1;
+                    background-color: #fff; /* White background */
+                    border-radius: 10px;
+                    padding: 20px;
+                    margin-right: 20px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+                }
+        
+                #right-section {
+                    flex: 2;
+                    background-color: #fff; /* White background */
+                    border-radius: 10px;
+                    padding: 20px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+                }
+            }
+                        
         </style>
     </head>
     <body>
@@ -111,120 +114,126 @@
         </header>
     
         <main>
-            <div id="left-section">
-                <div id="left-content">
-                    <!-- Content for the left section goes here -->
-                    <div class="button-container">
-                        <button id="MainMenuButton">Main Menu</button>
-                        <button id="7habitsButton">The 7 Habits Of Highly Effective People</button>
-                        <button id="AtomichabitsButton">Atomic Habits</button>
-                        <button id="Straight-AButton">How to Become a Straight-A Student</button>
-                        <button id="TimeManagementButton">15 Secrets Successful People Know About Time Management</button>
-                        <button id="MoneyButton">How Money Works</button>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <div id="left-section">
+                        <div id="left-content">
+                            <!-- Content for the left section goes here -->
+                            <div class="button-container">
+                                <button id="MainMenuButton">Main Menu</button>
+                                <button id="7habitsButton">The 7 Habits Of Highly Effective People</button>
+                                <button id="AtomichabitsButton">Atomic Habits</button>
+                                <button id="Straight-AButton">How to Become a Straight-A Student</button>
+                                <button id="TimeManagementButton">15 Secrets Successful People Know About Time Management</button>
+                                <button id="MoneyButton">How Money Works</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div id="right-section">
-                <div id="right-content">
-                    <!-- Content for the right section goes here -->
-                    <div id="MainMenu" style="display: block;">
-                        <h2>Right Section</h2>
-                        <p>Hello my name is Aaryan and welcome to my website! For as long as I can remember I have always been looking for the best and most efficient ways to live my life. Over this summer break as I headed into grade 12 it finally hit me how much closer I had gotten to the “real world” and adulthood considering it is my final year of high school and I am only a year away from being a legal adult. With that in mind I decided to look into books that would help me with adulthood and the “academically challenging” years of my education yet to come. While on this journey of education I realized that just like myself there are probably others out there with concerns similar to mine and this website is my attempt addressing those concerns. On this website I will summarize the main ideas present in the books I have read while also giving my take on differences these books have made in my daily life. After all, just like any other journey, this one is best with others!</p>
+
+                <div class="flex-item">
+                    <div id="right-section">
+                        <div id="right-content">
+                            <!-- Content for the right section goes here -->
+                            <div id="MainMenu" style="display: block;">
+                                <h2>Right Section</h2>
+                                <p>Hello my name is Aaryan and welcome to my website! For as long as I can remember I have always been looking for the best and most efficient ways to live my life. Over this summer break as I headed into grade 12 it finally hit me how much closer I had gotten to the “real world” and adulthood considering it is my final year of high school and I am only a year away from being a legal adult. With that in mind I decided to look into books that would help me with adulthood and the “academically challenging” years of my education yet to come. While on this journey of education I realized that just like myself there are probably others out there with concerns similar to mine and this website is my attempt addressing those concerns. On this website I will summarize the main ideas present in the books I have read while also giving my take on differences these books have made in my daily life. After all, just like any other journey, this one is best with others!</p>
+                            </div>
+        
+                            <!-- Container for 7 Habits content -->
+                            <div id="7habitsContainer" style="display: none;">
+                                <img id="7habitsImage" src="7 Habits.jpg" alt="7 Habits Image">
+                                <p id="7habitsText">Stephen R. Covey’s book <i>7 Habits Of Highly Effective People</i> covers 7 habits you can incorporate into your life to help you achieve your goals and they are as follows: 
+                                    <br><br><b>1. Be proactive.</b> In this habit Covey explains the fact that inorder to achieve your goals you need to be in control of your actions and he suggests that in order to do so you must limit your reactionary decisions (decisions made as a result of external circumstances) and focus on things in your “Circle of Influence” or things in life that you can control. 
+                                    <br><br><b>2. Begin with the end in mind.</b> This habit has an individual clearly define their goals personal and professional and create a mission statement connected to said goal that outlines your values and principals while keeping your goal in view creating a blueprint for you that will help guide your decisions and actions towards achieving said goal. 
+                                    <br><br><b>3. Put first things first.</b> This habit builds on the work you have done as part of “Begin with the end in mind” and has you complete tasks not in order of urgency but inorder of significance with regards to the goals you have created. Inorder to do this Covery also explains that in some cases you may need to say no to distractions and less important tasks in order to allow you to focus on your goals. 
+                                    <br><br><b>4. Think Win - Win.</b> To think win -win is to try and identify a solution or course of action that results in all parties because this will help you build trust and cooperate with others rather than compete with them. 
+                                    <br><br><b>5. Seek First to Understand, Then be Understood.</b> This habit explains the importance of active listening when it comes to effective communication and successful persuasion. Active listening is huge for effective communication because when you are able to empathize with who you are listening to you are able to understand them at a higher level. Using this further understanding you are able to tailor your methods of persuasion inorder to suit who you are talking to. 
+                                    <br><br><b>6. Synergize.</b> To synergize is to work with a variety of people with different skill sets and perspectives. This variety in skillsets and perspectives when incorporated correctly in a collaborative manner can cope up with unique and innovative solutions to a variety of problems that may not have been solved by you alone. So in simple terms sometimes it’s okay to ask for help and work collaboratively with someone towards a solution to a problem. 
+                                    <br><br><b>7. Sharpen the Saw.</b> Sharpening the saw is all about self - care and stressing the importance of taking time for yourself in order to improve 4 categories of your personal health (physical, mental, emotional and spiritual). Covey uses a saw as a metaphor to express the fact that while sometimes saw must stop cutting inorder to be sharpened after being sharpen the saw is much more efficient similarly to how while me may get sucked into the world of constant work sometimes a small break gives your body enough rest in order to come back much stronger than before improving your efficiency. 
+                                    <br><br>Covey is able to communicate these 7 habits using a variety of examples and diagrams helping further illustrate his points while also leaving you a series of ways you can incorporate each habit into your own life by providing tips at the end of each chapter.
+                                    <br><br>
+                                </p>
+                                    <video width="500px" height="280px" controls="controls">
+                                    <source id="7 Habbits Video" src="7 Habits.mp4" type="video/mp4"/>
+                                    </video>
+                            </div>
+                                
+                            <!-- Container for Atomic Habits content -->
+                            <div id="AtomichabitsContainer" style="display: none;">
+                                <img id="AtomichabitsImage" src="Atomic Habits.jpg" alt="Atomic Habits Image">
+                                <p id="AtomichabitsText">James Clear’s book <i>Atomic Habits</i> takes the approach of helping you achieve your goals by creating small or atomic habits that you can insert into your daily routine. The rationale behind such an idea is it is easier for you to make numerous small changes to your daily routine rather than one large change. James also outlines the key considerations to be made when incorporating these small habits into your life: 
+                                    <br><br><b>Make it Obvious</b> - make easy to identify triggers to help you begin your habit 
+                                    <br><br><b>Make it Attractive</b> - Associate positive emotions with your habit 
+                                    <br><br><b>Make it Easy</b> - Simplify it, streamline the execution of the habit 
+                                    <br><br><b>Make it Satisfying</b> - Set the habit up to satisfy the human need of instant gratification
+                                    <br><br>
+                                </p>
+                                    <video width="500px" height="280px" controls="controls">
+                                    <source id="Atomic Habits Video" src="Atomic Habits.mp4" type="video/mp4"/>
+                                    </video>
+                            </div>
+        
+                            <!-- Container for Straight-A content -->
+                            <div id="Straight-AContainer" style="display: none;">
+                                <img id="Straight-AImage" src="Straight-A.jpg" alt="Straight-A Image">
+                                <p id="Straight-AText"><i>How to Become a Straight-A Student</i> is a book by Cal Newport that provides practical strategies and advice for students looking to excel academically. This book offers numerous tips to help improve your study habits and time management: 
+                                    <br><br><b>Time Management:</b> Newport emphasizes the importance of managing your time effectively by using a structured and organized approach to studying stressing the use of a detailed calendar. Additionally he advocates for the use of a progress journal where you can record what you want to achieve for the day and whether or not you were successful as a way to hold yourself accountable for that day's work helping you combat procrastination.
+                                    <br><br><b>Active Learning:</b> The book promotes active learning methods, such as summarizing, questioning, and teaching the material to someone else. Rather than passively learning methods such as reading and highlighting leads to better comprehension and retention. 
+                                    <br><br><b>Effective Note-Taking:</b> Newport provides techniques for taking concise and meaningful notes during lectures or while reading textbooks. He also suggest adjusting the methods used to take notes based on they type of class you have for technical classes (Math) you should focus on making sure you have all solutions with regards to the courses sample problems, while for non-technical classes (Language) you focus on capturing the lessons big ideas using the question/evidence/conclusion format.
+                                    <br><br><b>Study Habits:</b> The book encourages students to establish consistent study habits, such as creating a dedicated study space, setting specific goals, and sticking to a regular study schedule. Newport advises against cramming and promotes spaced repetition, which involves reviewing material over time to reinforce learning.
+                                    <br><br><b>Test Preparation:</b> Newport offers strategies for preparing for exams, including creating a study guide, practicing with past exams or questions, and using active recall to test your knowledge. He emphasizes the importance of regular self-assessment and adjusting your study strategies based on your performance.
+                                    <br><br><b>Project Management:</b> The book provides guidance on managing larger projects and assignments, breaking them down into manageable tasks, and setting deadlines for each small task to avoid last-minute rushes. Newport encourages students to seek feedback from professors/teachers or peers to improve the quality before and after the project.
+                                    <br><br><b>Motivation and Focus:</b> Newport discusses techniques for maintaining motivation and concentration, such as setting clear goals, finding your "why" for studying, and eliminating distractions.
+                                    <br><br><b>Balancing Work and Life:</b> The book acknowledges the importance of maintaining a balanced life outside of academics, including exercise, social activities, and relaxation, to support overall well-being and academic success. 
+                                    <br><br>In essence, <i>How to Become a Straight-A Student</i> offers a comprehensive guide to academic success by emphasizing effective study techniques, time management, and a structured approach to learning. It encourages students to adopt proactive learning strategies and habits that can lead to improved grades and a more fulfilling learning experience.
+                                </p> 
+                            </div> 
+        
+                            <!-- Container for TimeManagement content -->
+                            <div id="TimeManagementContainer" style="display: none;">
+                                <img id="TimeManagementImage" src="TimeManagement.jpg" alt="TimeManagement Image">
+                                <p id="TimeManagementText">The book <i>15 Secrets Successful People Know About Time Management</i> by Kevin Kruse outlines 15 key time management skills and strategies that successful individuals employ to maximize their productivity and achieve their goals. This book has Kurse construct 15 specific time management skills based on the advice from 7 billionaires, 13 Olympic athletes, 29 straight-A students, and 239 entrepreneurs.
+                                    <br><br><b>1. Time Blocking:</b> This technique involves scheduling specific blocks of time for focused work on important tasks. It helps individuals avoid distractions and multitasking.
+                                    <br><br><b>2. Prioritization:</b> Successful people prioritize their tasks and focus on high-impact activities that align with their goals. They use methods like the Eisenhower Matrix to determine what's most important. It is divided into 4 categories (do it now, do it later, urgent and non-urgent).
+                                    <br><br><b>3. Goal Setting:</b> Clear and specific goal setting is crucial for effective time management. Goals provide a sense of purpose and direction.
+                                    <br><br><b>4. Eliminating Distractions:</b> Successful individuals identify and eliminate common distractions like unnecessary notifications, interruptions, and time-wasting activities.
+                                    <br><br><b>5. Morning Routine:</b> Establishing a productive morning routine sets a positive tone for the day. It often includes activities like exercise, meditation, and planning.
+                                    <br><br><b>6. Theme Days:</b> Theme days involve dedicating specific days of the week to particular tasks or projects. This can improve focus and efficiency due to increased focus on a single task.
+                                    <br><br><b>7. Time Audit:</b> Conducting a time audit helps individuals understand how they're currently spending their time, making it easier to identify areas for improvement.
+                                    <br><br><b>8. Saying No:</b> Successful people are selective about the commitments they take on. They say "no" to tasks and activities that don't align with their goals.
+                                    <br><br><b>9. Batching:</b> Batching involves grouping similar tasks together and completing them in one go. This minimizes context switching and boosts efficiency.
+                                    <br><br><b>10. Delegation:</b> Successful individuals delegate tasks that others can handle, allowing them to focus on high-value activities.
+                                    <br><br><b>11. Technology Use:</b> They use technology wisely, leveraging tools and apps for task management, time tracking, and communication.
+                                    <br><br><b>12. Energy Management:</b> Recognizing that energy levels fluctuate throughout the day, they schedule important tasks during their peak energy times.
+                                    <br><br><b>13. Pareto Principle (80/20 Rule):</b> They apply the 80/20 rule which states that 80% of your output is determined by 20% of your input to identify and prioritize their most impactful tasks.
+                                    <br><br><b>14. Goal-Free Days:</b> Occasionally, they set aside days without specific goals or plans to relax, recharge, and be spontaneous.
+                                    <br><br><b>15. Reflection and Review:</b> Regularly reviewing their goals and progress helps successful individuals stay on track and make necessary adjustments.
+                                    <br><br>The outlines of these 15 skills just scratches the surface when it comes to the methods that the author aims to teach you throughout the book inorder to improve your personal and professional life.
+                                </p>
+                            </div> 
+        
+                            <!-- Container for How Money Works content -->
+                            <div id="MoneyContainer" style="display: none;">
+                                <img id="MoneyImage" src="Money.jpg" alt="Money Image">
+                                <p id="MoneyText">DK penguin house’s book <i>How Money Works</i> is an incredible resource for people new to the concept of finance. The book covers 4 key areas:
+                                    <br><br><b>Money Basics</b>
+                                    <br><br><b>Profit-Making and Financial Institutions</b>
+                                    <br><br><b>Government Finance and Public Money</b>
+                                    <br><br><b>Personal Finance</b>
+                                    <br><br>The book puts an emphasis on the use of statistics and images in order to help teach the financial concepts. This book is a must read especially for those interested in a career in finance, With the section personal finance section being the section I recommend everyone reads due to the fact that it covers topics that are applicable to everyone such as:
+                                    <br><br>The nature and different types of investments one can make.
+                                    <br><br>What debt is and how it is connected to loans, mortgages and credit cards.
+                                    <br><br>How do pension plans work and why it is important to save and make investments for retirement.
+                                    <br><br>How crypto currencies work such as bit coin.     
+                                    <br><br>
+                                </p>
+                                    <video width="500px" height="280px" controls="controls">
+                                    <source id="How Money Works Video" src="Money.mp4" type="video/mp4"/>
+                                    </video>
+                            </div>    
+                        </div>
                     </div>
-
-                    <!-- Container for 7 Habits content -->
-                    <div id="7habitsContainer" style="display: none;">
-                        <img id="7habitsImage" src="7 Habits.jpg" alt="7 Habits Image">
-                        <p id="7habitsText">Stephen R. Covey’s book <i>7 Habits Of Highly Effective People</i> covers 7 habits you can incorporate into your life to help you achieve your goals and they are as follows: 
-                            <br><br><b>1. Be proactive.</b> In this habit Covey explains the fact that inorder to achieve your goals you need to be in control of your actions and he suggests that in order to do so you must limit your reactionary decisions (decisions made as a result of external circumstances) and focus on things in your “Circle of Influence” or things in life that you can control. 
-                            <br><br><b>2. Begin with the end in mind.</b> This habit has an individual clearly define their goals personal and professional and create a mission statement connected to said goal that outlines your values and principals while keeping your goal in view creating a blueprint for you that will help guide your decisions and actions towards achieving said goal. 
-                            <br><br><b>3. Put first things first.</b> This habit builds on the work you have done as part of “Begin with the end in mind” and has you complete tasks not in order of urgency but inorder of significance with regards to the goals you have created. Inorder to do this Covery also explains that in some cases you may need to say no to distractions and less important tasks in order to allow you to focus on your goals. 
-                            <br><br><b>4. Think Win - Win.</b> To think win -win is to try and identify a solution or course of action that results in all parties because this will help you build trust and cooperate with others rather than compete with them. 
-                            <br><br><b>5. Seek First to Understand, Then be Understood.</b> This habit explains the importance of active listening when it comes to effective communication and successful persuasion. Active listening is huge for effective communication because when you are able to empathize with who you are listening to you are able to understand them at a higher level. Using this further understanding you are able to tailor your methods of persuasion inorder to suit who you are talking to. 
-                            <br><br><b>6. Synergize.</b> To synergize is to work with a variety of people with different skill sets and perspectives. This variety in skillsets and perspectives when incorporated correctly in a collaborative manner can cope up with unique and innovative solutions to a variety of problems that may not have been solved by you alone. So in simple terms sometimes it’s okay to ask for help and work collaboratively with someone towards a solution to a problem. 
-                            <br><br><b>7. Sharpen the Saw.</b> Sharpening the saw is all about self - care and stressing the importance of taking time for yourself in order to improve 4 categories of your personal health (physical, mental, emotional and spiritual). Covey uses a saw as a metaphor to express the fact that while sometimes saw must stop cutting inorder to be sharpened after being sharpen the saw is much more efficient similarly to how while me may get sucked into the world of constant work sometimes a small break gives your body enough rest in order to come back much stronger than before improving your efficiency. 
-                            <br><br>Covey is able to communicate these 7 habits using a variety of examples and diagrams helping further illustrate his points while also leaving you a series of ways you can incorporate each habit into your own life by providing tips at the end of each chapter.
-                            <br><br>
-                        </p>
-                            <video width="500px" height="280px" controls="controls">
-                            <source id="7 Habbits Video" src="7 Habits.mp4" type="video/mp4"/>
-                            </video>
-                    </div>
-                        
-                    <!-- Container for Atomic Habits content -->
-                    <div id="AtomichabitsContainer" style="display: none;">
-                        <img id="AtomichabitsImage" src="Atomic Habits.jpg" alt="Atomic Habits Image">
-                        <p id="AtomichabitsText">James Clear’s book <i>Atomic Habits</i> takes the approach of helping you achieve your goals by creating small or atomic habits that you can insert into your daily routine. The rationale behind such an idea is it is easier for you to make numerous small changes to your daily routine rather than one large change. James also outlines the key considerations to be made when incorporating these small habits into your life: 
-                            <br><br><b>Make it Obvious</b> - make easy to identify triggers to help you begin your habit 
-                            <br><br><b>Make it Attractive</b> - Associate positive emotions with your habit 
-                            <br><br><b>Make it Easy</b> - Simplify it, streamline the execution of the habit 
-                            <br><br><b>Make it Satisfying</b> - Set the habit up to satisfy the human need of instant gratification
-                            <br><br>
-                        </p>
-                            <video width="500px" height="280px" controls="controls">
-                            <source id="Atomic Habits Video" src="Atomic Habits.mp4" type="video/mp4"/>
-                            </video>
-                    </div>
-
-                    <!-- Container for Straight-A content -->
-                    <div id="Straight-AContainer" style="display: none;">
-                        <img id="Straight-AImage" src="Straight-A.jpg" alt="Straight-A Image">
-                        <p id="Straight-AText"><i>How to Become a Straight-A Student</i> is a book by Cal Newport that provides practical strategies and advice for students looking to excel academically. This book offers numerous tips to help improve your study habits and time management: 
-                            <br><br><b>Time Management:</b> Newport emphasizes the importance of managing your time effectively by using a structured and organized approach to studying stressing the use of a detailed calendar. Additionally he advocates for the use of a progress journal where you can record what you want to achieve for the day and whether or not you were successful as a way to hold yourself accountable for that day's work helping you combat procrastination.
-                            <br><br><b>Active Learning:</b> The book promotes active learning methods, such as summarizing, questioning, and teaching the material to someone else. Rather than passively learning methods such as reading and highlighting leads to better comprehension and retention. 
-                            <br><br><b>Effective Note-Taking:</b> Newport provides techniques for taking concise and meaningful notes during lectures or while reading textbooks. He also suggest adjusting the methods used to take notes based on they type of class you have for technical classes (Math) you should focus on making sure you have all solutions with regards to the courses sample problems, while for non-technical classes (Language) you focus on capturing the lessons big ideas using the question/evidence/conclusion format.
-                            <br><br><b>Study Habits:</b> The book encourages students to establish consistent study habits, such as creating a dedicated study space, setting specific goals, and sticking to a regular study schedule. Newport advises against cramming and promotes spaced repetition, which involves reviewing material over time to reinforce learning.
-                            <br><br><b>Test Preparation:</b> Newport offers strategies for preparing for exams, including creating a study guide, practicing with past exams or questions, and using active recall to test your knowledge. He emphasizes the importance of regular self-assessment and adjusting your study strategies based on your performance.
-                            <br><br><b>Project Management:</b> The book provides guidance on managing larger projects and assignments, breaking them down into manageable tasks, and setting deadlines for each small task to avoid last-minute rushes. Newport encourages students to seek feedback from professors/teachers or peers to improve the quality before and after the project.
-                            <br><br><b>Motivation and Focus:</b> Newport discusses techniques for maintaining motivation and concentration, such as setting clear goals, finding your "why" for studying, and eliminating distractions.
-                            <br><br><b>Balancing Work and Life:</b> The book acknowledges the importance of maintaining a balanced life outside of academics, including exercise, social activities, and relaxation, to support overall well-being and academic success. 
-                            <br><br>In essence, <i>How to Become a Straight-A Student</i> offers a comprehensive guide to academic success by emphasizing effective study techniques, time management, and a structured approach to learning. It encourages students to adopt proactive learning strategies and habits that can lead to improved grades and a more fulfilling learning experience.
-                        </p> 
-                    </div> 
-
-                    <!-- Container for TimeManagement content -->
-                    <div id="TimeManagementContainer" style="display: none;">
-                        <img id="TimeManagementImage" src="TimeManagement.jpg" alt="TimeManagement Image">
-                        <p id="TimeManagementText">The book <i>15 Secrets Successful People Know About Time Management</i> by Kevin Kruse outlines 15 key time management skills and strategies that successful individuals employ to maximize their productivity and achieve their goals. This book has Kurse construct 15 specific time management skills based on the advice from 7 billionaires, 13 Olympic athletes, 29 straight-A students, and 239 entrepreneurs.
-                            <br><br><b>1. Time Blocking:</b> This technique involves scheduling specific blocks of time for focused work on important tasks. It helps individuals avoid distractions and multitasking.
-                            <br><br><b>2. Prioritization:</b> Successful people prioritize their tasks and focus on high-impact activities that align with their goals. They use methods like the Eisenhower Matrix to determine what's most important. It is divided into 4 categories (do it now, do it later, urgent and non-urgent).
-                            <br><br><b>3. Goal Setting:</b> Clear and specific goal setting is crucial for effective time management. Goals provide a sense of purpose and direction.
-                            <br><br><b>4. Eliminating Distractions:</b> Successful individuals identify and eliminate common distractions like unnecessary notifications, interruptions, and time-wasting activities.
-                            <br><br><b>5. Morning Routine:</b> Establishing a productive morning routine sets a positive tone for the day. It often includes activities like exercise, meditation, and planning.
-                            <br><br><b>6. Theme Days:</b> Theme days involve dedicating specific days of the week to particular tasks or projects. This can improve focus and efficiency due to increased focus on a single task.
-                            <br><br><b>7. Time Audit:</b> Conducting a time audit helps individuals understand how they're currently spending their time, making it easier to identify areas for improvement.
-                            <br><br><b>8. Saying No:</b> Successful people are selective about the commitments they take on. They say "no" to tasks and activities that don't align with their goals.
-                            <br><br><b>9. Batching:</b> Batching involves grouping similar tasks together and completing them in one go. This minimizes context switching and boosts efficiency.
-                            <br><br><b>10. Delegation:</b> Successful individuals delegate tasks that others can handle, allowing them to focus on high-value activities.
-                            <br><br><b>11. Technology Use:</b> They use technology wisely, leveraging tools and apps for task management, time tracking, and communication.
-                            <br><br><b>12. Energy Management:</b> Recognizing that energy levels fluctuate throughout the day, they schedule important tasks during their peak energy times.
-                            <br><br><b>13. Pareto Principle (80/20 Rule):</b> They apply the 80/20 rule which states that 80% of your output is determined by 20% of your input to identify and prioritize their most impactful tasks.
-                            <br><br><b>14. Goal-Free Days:</b> Occasionally, they set aside days without specific goals or plans to relax, recharge, and be spontaneous.
-                            <br><br><b>15. Reflection and Review:</b> Regularly reviewing their goals and progress helps successful individuals stay on track and make necessary adjustments.
-                            <br><br>The outlines of these 15 skills just scratches the surface when it comes to the methods that the author aims to teach you throughout the book inorder to improve your personal and professional life.
-                        </p>
-                    </div> 
-
-                    <!-- Container for How Money Works content -->
-                    <div id="MoneyContainer" style="display: none;">
-                        <img id="MoneyImage" src="Money.jpg" alt="Money Image">
-                        <p id="MoneyText">DK penguin house’s book <i>How Money Works</i> is an incredible resource for people new to the concept of finance. The book covers 4 key areas:
-                            <br><br><b>Money Basics</b>
-                            <br><br><b>Profit-Making and Financial Institutions</b>
-                            <br><br><b>Government Finance and Public Money</b>
-                            <br><br><b>Personal Finance</b>
-                            <br><br>The book puts an emphasis on the use of statistics and images in order to help teach the financial concepts. This book is a must read especially for those interested in a career in finance, With the section personal finance section being the section I recommend everyone reads due to the fact that it covers topics that are applicable to everyone such as:
-                            <br><br>The nature and different types of investments one can make.
-                            <br><br>What debt is and how it is connected to loans, mortgages and credit cards.
-                            <br><br>How do pension plans work and why it is important to save and make investments for retirement.
-                            <br><br>How crypto currencies work such as bit coin.     
-                            <br><br>
-                        </p>
-                            <video width="500px" height="280px" controls="controls">
-                            <source id="How Money Works Video" src="Money.mp4" type="video/mp4"/>
-                            </video>
-                    </div>    
                 </div>
             </div>
         </main>
