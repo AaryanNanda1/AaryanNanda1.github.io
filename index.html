@@ -89,10 +89,18 @@
                 flex-direction: column; /* Buttons in a vertical column */
                 align-items: flex-start; /* Align buttons to the left */
             }
-    
-            button {
-                background-color: #000; /* Black button background */
+            /* Classes for different button colors */
+            .red-button {
+                background-color: #b5052b; /* Black button background */
                 color: #fff; /* White text color */
+            }
+
+            .blue-button {
+                background-color: #052ba8; /* Black button background */
+                color: #fff; /* White text color */
+            }
+            
+            button {
                 padding: 2% 4%;
                 border: none;
                 border-radius: 5px;
@@ -103,7 +111,7 @@
             }
     
             button:hover {
-                background-color: #333; /* Darker background on hover */
+                filter: brightness(90%); /* Darken the button on hover */
             }
         </style>
     </head>
@@ -118,12 +126,12 @@
                 <div id="left-content">
                     <!-- Content for the left section goes here -->
                     <div class="button-container">
-                        <button id="MainMenuButton">Main Menu</button>
-                        <button id="7habitsButton">The 7 Habits Of Highly Effective People</button>
-                        <button id="AtomichabitsButton">Atomic Habits</button>
-                        <button id="Straight-AButton">How to Become a Straight-A Student</button>
-                        <button id="TimeManagementButton">15 Secrets Successful People Know About Time Management</button>
-                        <button id="MoneyButton">How Money Works</button>
+                        <button class = "red-button" id="MainMenuButton">Main Menu</button>
+                        <button class = "blue-button" id="7habitsButton">The 7 Habits Of Highly Effective People</button>
+                        <button class = "blue-button" id="AtomichabitsButton">Atomic Habits</button>
+                        <button class = "blue-button" id="Straight-AButton">How to Become a Straight-A Student</button>
+                        <button class = "blue-button" id="TimeManagementButton">15 Secrets Successful People Know About Time Management</button>
+                        <button class = "blue-button" id="MoneyButton">How Money Works</button>
                     </div>
                 </div>
             </div>
