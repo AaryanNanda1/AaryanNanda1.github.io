@@ -293,13 +293,13 @@
         </main>
         <script>   
 
-             // Get references to the button, text, and image elements for Main Menu
+             // Gets references to the button, text, and image elements for Main Menu
             const mainMenuButton = document.getElementById("MainMenuButton");
             const mainMenuContainer = document.getElementById("MainMenu");
             
-            // Add a click event listener to the MenuButton
+            // Adds a click event listener to the MenuButton
             mainMenuButton.addEventListener("click", function() {
-                // Hide all content containers
+                // Hides all content containers
                 document.getElementById("MainMenu").style.display = "none";
                 document.getElementById("7habitsContainer").style.display = "none";
                 document.getElementById("AtomichabitsContainer").style.display = "none";
@@ -307,100 +307,100 @@
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 document.getElementById("MoneyContainer").style.display = "none";
                 
-                // Toggle the visibility of the Main Menu content container
+                // Toggles the visibility of the Main Menu content container
                 if (mainMenuContainer.style.display === "none") 
                     {mainMenuContainer.style.display = "block";}
                 else {mainMenuContainer.style.display = "none";
                      }
             });
             
-            // Get references to the button, text, and image elements for 7 Habits
+            // Gets references to the button, text, and image elements for 7 Habits
             const revealButton = document.getElementById("7habitsButton");
             const contentContainer = document.getElementById("7habitsContainer");
             
-            // Add a click event listener to the 7habitsButton
+            // Adds a click event listener to the 7habitsButton
             revealButton.addEventListener("click", function() {
-                // Hide all content containers
+                // Hides all content containers
                 document.getElementById("7habitsContainer").style.display = "none";
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 document.getElementById("MoneyContainer").style.display = "none";
 
-                // Toggle the visibility of the 7 Habits content container
+                // Toggles the visibility of the 7 Habits content container
                 if (contentContainer.style.display === "none") 
                     {contentContainer.style.display = "block"; mainMenuContainer.style.display = "none";}
                 else {contentContainer.style.display = "none";
                      }
             });
 
-            // Get references to the button, text, and image elements for Atomic Habits
+            // Gets references to the button, text, and image elements for Atomic Habits
             const revealButton1 = document.getElementById("AtomichabitsButton");
             const contentContainer1 = document.getElementById("AtomichabitsContainer");
     
-            // Add a click event listener to the AtomichabitsButton
+            // Adds a click event listener to the AtomichabitsButton
             revealButton1.addEventListener("click", function() {
-                // Hide all content containers
+                // Hides all content containers
                 document.getElementById("7habitsContainer").style.display = "none";
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 document.getElementById("MoneyContainer").style.display = "none";
                 
-                // Toggle the visibility of the Atomic Habits content container
+                // Toggles the visibility of the Atomic Habits content container
                 if (contentContainer1.style.display === "none") 
                     {contentContainer1.style.display = "block"; mainMenuContainer.style.display = "none";}
                 else {contentContainer1.style.display = "none";
                      }
             });
 
-            // Get references to the button, text, and image elements for Straight-A
+            // Gets references to the button, text, and image elements for Straight-A
             const revealButton2 = document.getElementById("Straight-AButton");
             const contentContainer2 = document.getElementById("Straight-AContainer");
     
-            // Add a click event listener to the Straight-A Button
+            // Adds a click event listener to the Straight-A Button
             revealButton2.addEventListener("click", function() {
-                // Hide all content containers
+                // Hides all content containers
                 document.getElementById("7habitsContainer").style.display = "none";
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 document.getElementById("MoneyContainer").style.display = "none";
                 
-                // Toggle the visibility of the Straight-A content container
+                // Toggles the visibility of the Straight-A content container
                 if (contentContainer2.style.display === "none") 
                     {contentContainer2.style.display = "block"; mainMenuContainer.style.display = "none";}
                 else {contentContainer2.style.display = "none";
                      }
             });
 
-            // Get references to the button, text, and image elements for TimeManagement
+            // Gets references to the button, text, and image elements for TimeManagement
             const revealButton3 = document.getElementById("TimeManagementButton");
             const contentContainer3 = document.getElementById("TimeManagementContainer");
     
-            // Add a click event listener to the TimeManagement Button
+            // Adds a click event listener to the TimeManagement Button
             revealButton3.addEventListener("click", function() {
-                // Hide all content containers
+                // Hides all content containers
                 document.getElementById("7habitsContainer").style.display = "none";
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 document.getElementById("MoneyContainer").style.display = "none";
                 
-                // Toggle the visibility of the TimeManagement content container
+                // Toggles the visibility of the TimeManagement content container
                 if (contentContainer3.style.display === "none") 
                     {contentContainer3.style.display = "block"; mainMenuContainer.style.display = "none";}
                 else {contentContainer3.style.display = "none";
                      }
             });   
             
-            // Get references to the button, text, and image elements for Money
+            // Gets references to the button, text, and image elements for Money
             const revealButton4 = document.getElementById("MoneyButton");
             const contentContainer4 = document.getElementById("MoneyContainer");
     
-            // Add a click event listener to the Money Button
+            // Adds a click event listener to the Money Button
             revealButton4.addEventListener("click", function() {
-                // Hide all content containers
+                // Hides all content containers
                 document.getElementById("7habitsContainer").style.display = "none";
                 document.getElementById("AtomichabitsContainer").style.display = "none";
                 document.getElementById("Straight-AContainer").style.display = "none";
@@ -408,12 +408,14 @@
                 document.getElementById("TimeManagementContainer").style.display = "none";
                 document.getElementById("MoneyContainer").style.display = "none";
                 
-                // Toggle the visibility of the Money content container
+                // Toggles the visibility of the Money content container
                 if (contentContainer4.style.display === "none") 
                     {contentContainer4.style.display = "block"; mainMenuContainer.style.display = "none";}
                 else {contentContainer4.style.display = "none";
                      }
             });   
+
+            --- Aaryan Nanda ---
             
         </script>   
     </body>
